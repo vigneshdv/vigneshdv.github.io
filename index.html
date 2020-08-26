@@ -6,7 +6,12 @@
 <body>
 <script type="text/javascript">
 window.onload = function() {
-  window.location = "https://www.purpleknot.com/vickywedsshivani/"
+    if(window.location.pathname.indexOf('/m') > -1) {
+        window.location = "https://purpleknot.com/vickywedsshivani/";
+    } else {
+        window.location = "https://m.purpleknot.com/vickywedsshivani/";
+    }
+    
 };
 </script>
 </body>
